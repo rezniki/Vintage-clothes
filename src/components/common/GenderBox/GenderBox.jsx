@@ -14,7 +14,6 @@ const GenderBox = (props) => {
                     ))
                 }
             </div>
-            
         </>
     );
 };
