@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Viga-Regular';
+  src: local('Viga-Regular'),
+    url('./fonts/Viga-Regular.ttf') format(truetype);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'),
+    url('./fonts/Roboto-Regular.ttf') format(truetype);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Pompiere-Regular';
+  src: local('Pompiere-Regular'),
+    url('./fonts/Pompiere-Regular.ttf') format(truetype);
+  font-weight: normal;
+}
+
+

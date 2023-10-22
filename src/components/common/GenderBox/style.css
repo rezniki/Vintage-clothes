@@ -1,0 +1,27 @@
+.filter__genders {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 29px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.filter__content__gender {
+    display: flex;
+    padding: 14px 20px 14px 20px;
+    margin-bottom: 30px;
+}
+
+.filter__gender__type {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+}
+
+.filter__sex {
+    font-size: 24px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 10px;
+}

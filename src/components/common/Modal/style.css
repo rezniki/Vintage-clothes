@@ -1,0 +1,115 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.modal__content {
+    padding: 30px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.modal__delete__button {
+    color: black;
+    font-size: 50px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    background: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__title {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 35px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modal__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.modal__image {
+    width: 50%;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.modal__text {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.modal__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.modal__product__cost {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 27px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.modal__product__basket {
+    width: 40px;
+    cursor: pointer;
+}
+
+.filter__price {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 29px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.multi-range-slider {
+    font-family: 'Pompiere-Regular';
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.filter__apply__button {
+    background-color: #000000CC;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 8px 22px 8px 24px;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+

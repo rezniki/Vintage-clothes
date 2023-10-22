@@ -1,0 +1,30 @@
+.clothes__product {
+    cursor: pointer;
+}
+
+.clothes__product__image {
+    width: 85%;
+    height: 200px;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.clothes__product__description {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(56, 55, 55, 0.8);
+    width: 75.3%;
+    margin: 0;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.clothes__product__cost {
+    color: white;
+    font-size: 19px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}

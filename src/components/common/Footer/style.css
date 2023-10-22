@@ -1,0 +1,103 @@
+.footer {
+    background: #141414;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 100px 23px 100px;
+    width: 86%;
+}
+
+.footer__company {
+    width: 35%;
+}
+
+.footer__company__text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.footer__company__subtext {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.footer__links {
+    width: 11%;
+}
+
+.footer__links__text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.footer__links__subtext {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer__contacts {
+    width: 19%;
+}
+
+.footer__contacts__text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.footer__address {
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.footer__phonenumber {
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.footer__gmail {
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    text-decoration: none; 
+}
