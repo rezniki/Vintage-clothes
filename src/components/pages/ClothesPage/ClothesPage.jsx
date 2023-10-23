@@ -15,6 +15,14 @@ const ClothesPage = () => {
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(9999);
 
+    const [filt, setFilt] = useState(data);
+    
+    const SliderStyle = {
+        border: 'none',
+        boxShadow: 'none',
+        padding: '25px 10px',  
+    };
+
     const modalCloseClick = () => {
         if (isModalShow === true) {
             setModalShow(false);
@@ -30,12 +38,6 @@ const ClothesPage = () => {
     const handleInput = (e) => {
 	    setMinValue(e.minValue);
 	    setMaxValue(e.maxValue);
-    };
-
-    const SliderStyle = {
-        border: 'none',
-        boxShadow: 'none',
-        padding: '25px 10px',  
     };
 
     const Label = Boolean(true);
