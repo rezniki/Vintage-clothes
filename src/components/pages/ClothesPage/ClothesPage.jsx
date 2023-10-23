@@ -57,7 +57,11 @@ const ClothesPage = () => {
                             {
                                 filterdata.map((item) => (
                                     <div className='filter__cloth__type'>
-                                        <input type='checkbox' id={item.title} name={item.title} />
+                                        <input type='checkbox' id={item.title} name={item.title} onChange={(event) => {
+                                            let filterClothArray = data.filter((item) => item.type != event.target.value);
+                                            setFilt(filterClothArray);
+                                            console.log(filterClothArray);
+                                        }} />
                                         <label className='filter__cloth__title' for={item.title}>{item.title}</label>
                                     </div>
                                 )) 
@@ -68,7 +72,11 @@ const ClothesPage = () => {
                             {
                                 genderdata.map((item) => (
                                     <div className='filter__gender__type'>
-                                        <input type='checkbox' id={item.gender} name={item.gender}/>
+                                        <input type='checkbox' id={item.gender} name={item.gender} onChange={(event) => {
+                                            let filterGenderArray = data.filter((item) => item.type != event.target.value);
+                                            setFilt(filterGenderArray);
+                                            console.log(filterGenderArray);
+                                        }}/>
                                         <label className='filter__sex' for={item.gender}>{item.gender}</label>
                                     </div>
                                 ))
