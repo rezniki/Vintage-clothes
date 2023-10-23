@@ -5,13 +5,11 @@ import { data } from './data.js';
 import Footer from '../../common/Footer/Footer.jsx';
 import Modal from '../../common/Modal/Modal.jsx';
 import MultiRangeSlider from 'multi-range-slider-react';
-import CheckBox from '../../common/CheckBox/CheckBox.jsx';
-import GenderBox from '../../common/GenderBox/GenderBox.jsx';
-import { filterdata } from './filterdata.js';
-import { genderdata } from './genderdata.js';
+import { filterdata } from './data.js';
+import { genderdata } from './data.js';
 import { useState } from 'react';
 
-const ClothesPage = () => {
+const ClothesPage = (props) => {
 
     const [isModalShow, setModalShow] = useState(false);
     const [minValue, setMinValue] = useState(0);
@@ -52,8 +50,28 @@ const ClothesPage = () => {
                     {isModalShow && <Modal title='Filters' modalCloseClick={modalCloseClick}>
                         <h3 className='filter__price'>Price filter</h3>
                         <MultiRangeSlider min={0} max={9999} step={500} minValue={minValue} maxValue={maxValue} style={SliderStyle} label={Label} ruler={Ruler} barInnerColor='#000000' thumbLeftColor='#000000' thumbRightColor='#000000' onInput={(e) => {handleInput(e)}}/>
-                        <CheckBox filterdata={filterdata} />
-                        <GenderBox genderdata={genderdata} />
+                        <h3 className='filter__clothes__type'>Clothes type</h3>
+                        <div className='filter__content__type'>
+                            {
+                                props.filterdata.map((item) => (
+                                    <div className='filter__cloth__type'>
+                                        <input type='checkbox' id={item.title} name={item.title} />
+                                        <label className='filter__cloth__title' for={item.title}>{item.title}</label>
+                                    </div>
+                                )) 
+                            }
+                        </div>
+                        <h3 className='filter__genders'>Sex</h3>
+                        <div className='filter__content__gender'>
+                            {
+                                props.genderdata.map((item) => (
+                                    <div className='filter__gender__type'>
+                                        <input type='checkbox' id={item.gender} name={item.gender}/>
+                                        <label className='filter__sex' for={item.gender}>{item.gender}</label>
+                                    </div>
+                                ))
+                            }
+                        </div>
                         <button className='filter__apply__button'>Apply</button>    
                     </Modal>}
                     <h1 className='clothes__title'>Clothes</h1>

@@ -161,3 +161,22 @@ export const data = [
         cost: 400,
     },
 ];
+
+export const filterdata = [
+    {
+        title: 'Outrwear',
+        title: 'Skirts',
+        title: 'Dresses',
+        title: 'Pants',
+        title: 'Shirts',
+        title: 'Blouses',
+        title: 'Other',
+    },
+];
+
+export const genderdata = [
+    {
+        gender: 'Female',
+        gender: 'Male',
+    },
+];
