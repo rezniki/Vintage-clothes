@@ -9,7 +9,7 @@ import { filterdata } from './data.js';
 import { genderdata } from './data.js';
 import { useState } from 'react';
 
-const ClothesPage = (props) => {
+const ClothesPage = () => {
 
     const [isModalShow, setModalShow] = useState(false);
     const [minValue, setMinValue] = useState(0);
@@ -53,7 +53,7 @@ const ClothesPage = (props) => {
                         <h3 className='filter__clothes__type'>Clothes type</h3>
                         <div className='filter__content__type'>
                             {
-                                props.filterdata.map((item) => (
+                                filterdata.map((item) => (
                                     <div className='filter__cloth__type'>
                                         <input type='checkbox' id={item.title} name={item.title} />
                                         <label className='filter__cloth__title' for={item.title}>{item.title}</label>
@@ -64,7 +64,7 @@ const ClothesPage = (props) => {
                         <h3 className='filter__genders'>Sex</h3>
                         <div className='filter__content__gender'>
                             {
-                                props.genderdata.map((item) => (
+                                genderdata.map((item) => (
                                     <div className='filter__gender__type'>
                                         <input type='checkbox' id={item.gender} name={item.gender}/>
                                         <label className='filter__sex' for={item.gender}>{item.gender}</label>

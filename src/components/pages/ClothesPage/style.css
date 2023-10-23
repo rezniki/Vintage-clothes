@@ -27,7 +27,7 @@
     font-weight: 400;
     line-height: 30px;
     margin-top: 30px;
-    width: 52%;
+    width: 52.6%;
 }
 
 .clothes__products {
@@ -37,6 +37,74 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 15px;
     row-gap: 40px;
+}
+
+.filter__clothes__type {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 29px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.filter__content__type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 14px 20px 14px 20px;
+    margin-bottom: 24px;
+}
+
+.filter__cloth__type {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #050505;
+}
+
+.filter__cloth__title {
+    font-size: 24px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.filter__genders {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 29px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.filter__content__gender {
+    display: flex;
+    padding: 14px 20px 14px 20px;
+    margin-bottom: 30px;
+}
+
+.filter__gender__type {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+}
+
+.filter__sex {
+    font-size: 24px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 10px;
 }
 
 
