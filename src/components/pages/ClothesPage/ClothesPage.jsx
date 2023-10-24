@@ -15,7 +15,7 @@ const ClothesPage = () => {
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(9999);
 
-    const [filt, setFilt] = useState(data);
+    const [filter, setFilter] = useState(data);
     
     const SliderStyle = {
         border: 'none',
@@ -59,7 +59,7 @@ const ClothesPage = () => {
                                     <div className='filter__cloth__type'>
                                         <input type='checkbox' id={item.title} name={item.title} onChange={(event) => {
                                             let filterClothArray = data.filter((item) => item.type != event.target.value);
-                                            setFilt(filterClothArray);
+                                            setFilter(filterClothArray);
                                             console.log(filterClothArray);
                                         }} />
                                         <label className='filter__cloth__title' for={item.title}>{item.title}</label>
@@ -74,7 +74,7 @@ const ClothesPage = () => {
                                     <div className='filter__gender__type'>
                                         <input type='checkbox' id={item.gender} name={item.gender} onChange={(event) => {
                                             let filterGenderArray = data.filter((item) => item.type != event.target.value);
-                                            setFilt(filterGenderArray);
+                                            setFilter(filterGenderArray);
                                             console.log(filterGenderArray);
                                         }}/>
                                         <label className='filter__sex' for={item.gender}>{item.gender}</label>
@@ -87,7 +87,7 @@ const ClothesPage = () => {
                     <h1 className='clothes__title'>Clothes</h1>
                 </div>
                 <div className='clothes__products'>
-                    <Clothes data={data}/>
+                    <Clothes data={data} filter={filter}/>
                 </div>
             </div>
             <Footer/>
