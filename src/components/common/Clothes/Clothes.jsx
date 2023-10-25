@@ -17,7 +17,7 @@ function Clothes(props) {
     return (
         <>
             {
-                props.data.map((item) => (
+                props.filter.map((item) => (
                     <div className='clothes__product' onClick={() => {
                         setCurrentCard(item);
                         setModalShow(true);

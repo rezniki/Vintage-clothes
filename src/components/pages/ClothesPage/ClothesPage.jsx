@@ -61,7 +61,6 @@ const ClothesPage = () => {
                                             let filterClothArray = data.filter((item) => item.type != event.target.value);
                                             setFilter(filterClothArray);
                                             console.log(filterClothArray);
-                                            console.log(event.target.value);
                                         }} />
                                         <label className='filter__cloth__title' for={item.title}>{item.title}</label>
                                     </div>
@@ -88,7 +87,7 @@ const ClothesPage = () => {
                     <h1 className='clothes__title'>Clothes</h1>
                 </div>
                 <div className='clothes__products'>
-                    <Clothes data={data} filter={filter} />
+                    <Clothes filter={filter} />
                 </div>
             </div>
             <Footer/>
