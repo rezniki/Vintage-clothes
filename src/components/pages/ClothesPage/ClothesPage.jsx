@@ -87,7 +87,7 @@ const ClothesPage = () => {
                     <h1 className='clothes__title'>Clothes</h1>
                 </div>
                 <div className='clothes__products'>
-                    <Clothes data={data} filter={filter}/>
+                    <Clothes data={data} filter={filter} />
                 </div>
             </div>
             <Footer/>
