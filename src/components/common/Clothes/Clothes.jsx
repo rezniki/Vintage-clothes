@@ -22,7 +22,7 @@ function Clothes(props) {
                         setCurrentCard(item);
                         setModalShow(true);
                     }}>
-                        <img className='clothes__product__image' src={item.image} alt='Cargo'/>
+                        <img className='clothes__product__image' src={item.image} alt='Cloth'/>
                         <div className='clothes__product__description'>
                             <p className='clothes__product__cost'>Cost: {item.cost}$</p>
                             <img className='clothes__product__basket' src={Basket} alt='Basket'/>
@@ -32,7 +32,7 @@ function Clothes(props) {
             }
             {isModalShow && <Modal title={currentCard.stamp} modalCloseClick={modalCloseClick}>
                 <div className='modal__description'>
-                    <img className='modal__image' src={currentCard.image} alt='Cargo'/>
+                    <img className='modal__image' src={currentCard.image} alt='Cloth'/>
                     <p className='modal__text'>{currentCard.text} {currentCard.size} cm.</p>
                 </div>
                 <div className='modal__cost'>

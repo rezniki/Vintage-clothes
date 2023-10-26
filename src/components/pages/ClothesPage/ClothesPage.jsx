@@ -75,7 +75,6 @@ const ClothesPage = () => {
                                         <input type='checkbox' id={check.gender} name={check.gender} onChange={() => {
                                             let filterGenderArray = data.filter((item) => item.sex === check.gender);
                                             setFilter(filterGenderArray);
-                                            
                                         }}/>
                                         <label className='filter__sex' for={check.gender}>{check.gender}</label>
                                     </div>

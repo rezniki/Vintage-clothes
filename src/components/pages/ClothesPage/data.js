@@ -3,7 +3,7 @@ export const data = [
         id: Math.random(),
         image: 'https://st.tsum.com/btrx/i/12/97/49/56/01_434.jpg?u=1665526046',
         stamp: 'Cashmere and silk coat',
-        text: 'The dark blue coat was light and warm. The team of the brand managed to achieve the desired properties by combining materials. Brand: Kiton; Composition: Cashmere: 96%; Silk: 4%; Lining-fur natural: 100%; Lining-silk: 100%; Finish-leather: 100%; Country of manufacture: Italy. Waist circumference:',
+        text: 'The dark blue coat was light and warm. The team of the brand managed to achieve the desired properties by combining materials. Brand: Kiton; Composition: Cashmere: 96%; Silk: 4%; Lining-fur natural: 100%; Lining-silk: 100%; Finish-leather: 100%; Country of manufacture: Italy. Chest girth:',
         type: 'Outrwear',
         sex: 'Male',
         size: 120,
@@ -14,7 +14,7 @@ export const data = [
         id: Math.random(),
         image: 'https://st2.tsum.com/sig/b8e12fd7c439bb723ae7f469c36e99c8/width/1526/i/1e/87/68/e1/1e8768e1-8981-3530-add5-0c4cf629aa36.jpg',
         stamp: 'Single-breasted coat made of wool mixture',
-        text: 'For the manufacture of a single-breasted coat, the craftsmen used a soft half-wool tweed with the addition of durable silk fibers. Brand: Kiton; Composition: Polyamide: 6%; Moher: 5%; Cashmere: 35%; Wool: 22%; Wool/alpaca/: 17%; Country of manufacture: Italy. Waist circumference:',
+        text: 'For the manufacture of a single-breasted coat, the craftsmen used a soft half-wool tweed with the addition of durable silk fibers. Brand: Kiton; Composition: Polyamide: 6%; Moher: 5%; Cashmere: 35%; Wool: 22%; Wool/alpaca/: 17%; Country of manufacture: Italy. Chest girth:',
         type: 'Outrwear',
         sex: 'Male',
         size: 114,
@@ -25,7 +25,7 @@ export const data = [
         id: Math.random(),
         image: 'https://st2.tsum.com/sig/dd701a971906058d7c0791a0a4969fde/width/1526/i/28/6d/6a/14/286d6a14-cec1-3b7b-9da8-81bb1302ee17.jpg',
         stamp: 'Cashmere coat',
-        text: 'The correct length to mid-thigh allows you to wear this ink-blue straight coat with both everyday clothes and formal costume. Brand: Kiton; Composition: Cashmere: 100%; Country of manufacture: Italy; Design country: Italy. Waist circumference:',
+        text: 'The correct length to mid-thigh allows you to wear this ink-blue straight coat with both everyday clothes and formal costume. Brand: Kiton; Composition: Cashmere: 100%; Country of manufacture: Italy; Design country: Italy. Chest girth:',
         type: 'Outrwear',
         sex: 'Male',
         size: 104,
@@ -36,11 +36,33 @@ export const data = [
         id: Math.random(),
         image: 'https://st1.tsum.com/sig/60601b36644b1e9d00650b6700ff641a/width/1526/i/1a/a1/bb/bf/1aa1bbbf-6b81-3464-b995-41aa2ea0dab3.jpg',
         stamp: 'Two-sided coat',
-        text: 'A two-sided coat from the autumn-winter collection will allow experimenting with images. In dry cool weather, it can be worn brown, and in wet it is better to turn out dark blue, with quilted pattern. Brand: Kiton; Composition: Cashmere: 9%; Wool: 89%; Polyamide: 2%; Lining-polyester: 100%; Finish-leather: 100%; Country of manufacture: Italy. Waist circumference:',
+        text: 'A two-sided coat from the autumn-winter collection will allow experimenting with images. In dry cool weather, it can be worn brown, and in wet it is better to turn out dark blue, with quilted pattern. Brand: Kiton; Composition: Cashmere: 9%; Wool: 89%; Polyamide: 2%; Lining-polyester: 100%; Finish-leather: 100%; Country of manufacture: Italy. Chest girth:',
         type: 'Outrwear',
         sex: 'Male',
         size: 118,
         cost: 800,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st.tsum.com/btrx/i/12/89/79/47/01_1526.jpg?u=1661289843',
+        stamp: 'Cashmere coat',
+        text: 'Dark blue single-breasted coat with plunge pockets and wide lapels stitched from soft premium cashmere. Brand: Kiton; Composition: Cashmere: 100%; Trim/fur natural/: 100%; Lining silk: 100%; Country of manufacture: Italy. Chest girth:',
+        type: 'Outrwear',
+        sex: 'Male',
+        size: 112,
+        cost: 910,
+    },
+    
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/44e53813017808a2e9ed653e3839ab03/width/1526/i/e2/03/ba/82/e203ba82-cad6-30fe-af91-cfd77efadac5.jpg',
+        stamp: 'Llama coat',
+        text: 'Leaving the cut of the navy coat concise, the designers of the brand shifted their attention to the material. The single-breasted model was made of soft fabric based on the valuable coat of the lama guanako, which lives exclusively in the steppes and mountains of the Southern Andes. Brand: Kiton; Composition: Wool/llama/Lama Guanicoe: 100%; Lining-cusp: 100%; Country of manufacture: Italy. Chest girth:',
+        type: 'Outrwear',
+        sex: 'Male',
+        size: 109,
+        cost: 920,
     },
     
     {
@@ -75,6 +97,39 @@ export const data = [
         size: 86,
         cost: 780,
     },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/e68f75eecd61cd0113d2147104aafb3a/width/1526/i/8d/ad/b6/41/8dadb641-79ab-3a77-8c61-77328f9a709c.jpg',
+        stamp: 'Orange pants',
+        text: 'Saturated orange shade, like a ripe orange, is not the only advantage of pants from the spring-summer collection. For sewing the straight cut model used dense textured textiles. Brand: Kiton; Composition: Lyocell: 67%; Cotton: 30%; Elastane (Polyurethane): 3%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Pants',
+        sex: 'Male',
+        size: 79,
+        cost: 730,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/0d5b51f8dbc6ee470dee5f32c2468ef8/width/1526/i/2d/c3/1c/5c/2dc31c5c-2f79-3093-95bb-e0ba678840f0.jpg',
+        stamp: 'Navy-blue pants ',
+        text: 'The versatile dark blue trousers will help to assemble a comfortable image for both the city and the camping holiday. Brand: Kiton; Composition: Cotton: 60%; Lyocell: 39%; Elastane (Polyurethane): 1%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Pants',
+        sex: 'Male',
+        size: 76,
+        cost: 760,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/40c18fac3f41304a6a683535e3d60ae1/width/1526/i/06/e8/03/02/06e80302-2e40-3553-9481-0296b5532248.jpg',
+        stamp: 'Navy-blue pants',
+        text: 'The straight trousers have been borrowed from jeans. To make a model from the spring-summer collection, a soft elastic fabric based on ultra-strong eucalyptus wood fibers (lyocella) with the addition of fine cotton was used. Brand: Kiton; Composition: Lyocell: 54%; Cotton: 45%; Elastane (Polyurethane): 1%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Pants',
+        sex: 'Male',
+        size: 84,
+        cost: 720,
+    },
     
     {
         id: Math.random(),
@@ -98,6 +153,50 @@ export const data = [
         cost: 720,
     },
     
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/dfa0c234d81475afa70dd768e40a61ed/width/1526/i/e3/40/c5/72/e340c572-6556-37e1-ba28-2d6741f342f2.jpg',
+        stamp: 'Denim skirt',
+        text: 'The gray skirt looks like it’s been altered from jeans. This effect creates characteristic seams at the front, a shaped insert on the tone lighter and hand-cut unprocessed edge of the product. Brand: 3x1; Composition: Cotton: 100%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Skirts',
+        sex: 'Female',
+        size: 72,
+        cost: 610,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/2e09468812f6838e4938b57b3d3cede8/width/1526/i/0b/15/e1/13/0b15e113-1b58-37e5-be97-4a9596761e75.jpg',
+        stamp: 'Woolen skirt',
+        text: 'The dark blue monotonous midi skirt with two plunge pockets and a wide belt will befriend both the laconic blazer and the decorated top. Brand: Jil Sander; Composition: Wool: 100%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Skirts',
+        sex: 'Female',
+        size: 76,
+        cost: 620,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/6379d9bdef03c0e24bf0c65fda832f5a/width/1526/i/a3/7e/05/40/a37e0540-b927-3801-969a-954dac2ab28d.jpg',
+        stamp: 'Viscose skirt',
+        text: 'A black pencil skirt with a wide elastic belt fits comfortably on the figure. The fine cut model was made from a soft, light knitwear with a jacquard pattern from a stamp emblem founded by Hugo Ferdinand Boss. Brand: BOSS; Composition: Viscose: 74%; Polyamide: 14%; Polyester: 10%; Elastane: 2%; Country of Manufacture: China. Waist circumference:',
+        type: 'Skirts',
+        sex: 'Female',
+        size: 69,
+        cost: 640,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/7e1b34740d7c86dd27583f0a895cce96/width/1526/i/c0/09/b5/ba/c009b5ba-650a-316a-8b22-a11eb52d4097.jpg',
+        stamp: 'Woolen skirt',
+        text: 'Grey midi skirt with wide folds at the front is made of soft wool flannel. The lightweight texture maintains a comfortable temperature for the body, and the clothes from it almost does not wrinkle and retains the desired shape for a long time. Brand: LE17SEPTEMBRE; Composition: Wool: 100%; Country of manufacture: Republic of Korea. Waist circumference:',
+        type: 'Skirts',
+        sex: 'Female',
+        size: 68,
+        cost: 630,
+    },
+
     {
         id: Math.random(),
         image: 'https://st1.tsum.com/sig/598c38c1bef187a7e85d6d7477f015b2/width/1526/i/82/4d/25/9b/824d259b-6351-3226-a31b-a419b75bb039.jpg',
@@ -133,6 +232,39 @@ export const data = [
 
     {
         id: Math.random(),
+        image: 'https://st2.tsum.com/sig/5ea857dd8ef2955601349498183038cc/width/1526/i/f9/26/c3/ac/f926c3ac-8a64-3cd0-86e2-ab0bb87c9eb2.jpg',
+        stamp: 'Linen Shorts',
+        text: 'White shorts just below the knees will be a good solution for images in hot weather. It is all in the thin, but at the same time durable flax-based material, which is good to let air, keeping a comfortable for the body microclimate. Brand: Kiton; Composition: Linen: 100%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Shirts',
+        sex: 'Male',
+        size: 102,
+        cost: 800,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/ca0375a8507c7d5224a610ddb23c11d4/width/1526/i/da/ac/47/bd/daac47bd-5616-37f2-acce-f34404fa7ea4.jpg',
+        stamp: 'Cotton shorts',
+        text: 'The blue shorts were made from soft, thick knitwear. The material is made of long premium cotton fibers, intertwining them so that the fabric stretches a little and does not restrain movement. Brand: Kiton; Composition: Cotton: 100%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Shirts',
+        sex: 'Male',
+        size: 72,
+        cost: 810,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/e8cde88ec316c19f2b86248097035fea/width/1526/i/1b/fc/8f/86/1bfc8f86-d8cc-3d78-b746-f4b891e57283.jpg',
+        stamp: 'Cotton shorts',
+        text: 'Dark blue shorts will become a versatile soldier in everyday wardrobe. The spring collection model will be combined with a concise T-shirt and a bright shirt or polo. Brand: Kiton; Composition: Cotton: 98%; Elastane (Polyurethane): 2%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Shirts',
+        sex: 'Male',
+        size: 85,
+        cost: 830,
+    },
+
+    {
+        id: Math.random(),
         image: 'https://st1.tsum.com/sig/5f68dee16b9659bf51c04df29bc0766d/width/1526/i/d8/ec/94/07/d8ec9407-8665-3c68-9826-2283989a3483.jpg',
         stamp: 'Silk dress',
         text: 'When creating clothes Miuccia Prada and Raf Simons use the game on the opposite of styles, skillfully combining sports dynamism and romantic details. An example of this is the purple dress from the capsule collection Holiday. Brand: Prada; Composition: Silk: 100%; Country of manufacture: Italy. Waist circumference:',
@@ -151,6 +283,50 @@ export const data = [
         sex: 'Female',
         size: 52,
         cost: 970,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st.tsum.com/btrx/i/13/15/59/66/01_1526.jpg?u=1675631984',
+        stamp: 'Silk and wool dress',
+        text: 'The straight creamy mini-dress with short sleeves and pleated over the entire length at the front was made of soft kadi silk crepe with fine delicate wool. Brand: Gucci; Composition: Silk: 53%; Wool: 47%; Country of manufacture: Italy. Waist circumference:',
+        type: 'Dresses',
+        sex: 'Female',
+        size: 81,
+        cost: 840,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/a7e0cd9fd4b507c05cc4ca9569ae125c/width/1526/i/9a/47/5b/7f/9a475b7f-c57f-35d4-aff0-e066b65e5923.jpg',
+        stamp: 'Purple mini-dress',
+        text: 'Eli Saab made the purple minidress extremely concise and yet extremely feminine. Brand: Elie Saab; Composition: Polyester: 50%; Viscose: 25%; Acetate: 24%; Polyester lining: 100%; Elastane (Polyurethane): 1%; Country of manufacture: Lebanon. Waist circumference:',
+        type: 'Dresses',
+        sex: 'Female',
+        size: 68,
+        cost: 820,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/8d75cbf9708103c2ee50d5d3b9ecb6b1/width/1526/i/02/3b/61/80/023b6180-240e-36a2-92ea-824100e9cbff.jpg',
+        stamp: 'Cashmere dress',
+        text: 'Restrained black dress designer brand compensated with asymmetrical silhouette. In this case, the appearance of the product can be changed by undoing the right sleeve. Brand: Jacob Lee; Composition: Cashmere: 98%; Elastan: 2%; Country of Manufacture: China. Waist circumference:',
+        type: 'Dresses',
+        sex: 'Female',
+        size: 50,
+        cost: 870,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/0af9018f886af19f55c7e0b0c4c0909f/width/1526/i/e1/b6/1b/05/e1b61b05-ae15-3a36-b868-4876a376d90b.jpg',
+        stamp: 'Black midi-dress',
+        text: 'The long-sleeved black midi dress was made using a thick viscose-based elastic material. Brand: Pinko; Composition: Viscose: 67%; Elastan (Polyurethane): 5%; Polyamide: 28%; Country of production: Tunisia. Waist circumference:',
+        type: 'Dresses',
+        sex: 'Female',
+        size: 64,
+        cost: 880,
     },
 
     {
@@ -177,6 +353,50 @@ export const data = [
 
     {
         id: Math.random(),
+        image: 'https://st2.tsum.com/sig/27bc3e8cd35f1f5b73ed2c648c449ca4/width/1526/i/fe/dd/47/c0/fedd47c0-1644-3e8f-8c92-ad97980e5206.jpg',
+        stamp: 'Silk blouse',
+        text: 'Alberta Ferretti’s black blouse adds provocation to her miniskirt and shoes. Brand: Alberta Ferretti; Composition: Silk: 100%; Country of manufacture: Hungary. Chest girth:',
+        type: 'Blouses',
+        sex: 'Female',
+        size: 88,
+        cost: 890,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/cb414e99a1e6964a6d524f610b6032a9/width/1526/i/70/9f/3f/27/709f3f27-1fb6-3075-83ad-214379b725c7.jpg',
+        stamp: 'Transparent blouse',
+        text: 'Despite the cut like a shirt, the blouse does not look strict. The model was made of a translucent mesh that shows more than it hides. Brand: MM6; Composition: Polyester: 100%; Country of manufacture: Italy. Chest girth:',
+        type: 'Blouses',
+        sex: 'Female',
+        size: 84,
+        cost: 900,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/73204d437054bf24cc6ab5f22f4a17bf/width/1526/i/cc/c7/8e/d5/ccc78ed5-dd49-384c-b268-419320bb5607.jpg',
+        stamp: 'Grey blouse',
+        text: 'Alberta Ferretti’s grey blouse will make her look more feminine and elegant. Brand: Alberta Ferretti; Composition: Polyester: 100%; Country of manufacture: Italy. Chest girth:',
+        type: 'Blouses',
+        sex: 'Female',
+        size: 98,
+        cost: 915,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/e377329d37e284ed1f2212525efec710/width/1526/i/6a/25/09/93/6a250993-c656-342f-ab3f-b11e7d24bcc4.jpg',
+        stamp: 'Viscose and silk blouse',
+        text: 'The shade of khakis and large breast pockets, like a military uniform, added this blouse a little military aesthetics. Brand: BOSS; Composition: Viscose: 63%; Silk: 37%; Country of Manufacture: China. Chest girth:',
+        type: 'Blouses',
+        sex: 'Female',
+        size: 118,
+        cost: 918,
+    },
+
+    {
+        id: Math.random(),
         image: 'https://st2.tsum.com/sig/2e8b0590ab2ee1dddbb0587358377470/width/1526/i/9c/12/7b/7e/9c127b7e-4958-38d2-be2d-ecf96df6476e.jpg',
         stamp: 'Black jacket',
         text: 'The black jacket with the deep adjustable hood will be a good addition to the demystified wardrobe. To sew the model with the brand emblem on the left sleeve of the craftsmen used light durable polyamide. Brand: Premiata; Composition: Polyamide: 87%; Elastane (Polyurethane): 13%; Country of manufacture: Italy. Chest girth:',
@@ -195,6 +415,50 @@ export const data = [
         sex: 'Male',
         size: 124,
         cost: 925,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st.tsum.com/btrx/i/12/60/77/52/01_1526.jpg?u=1645309032',
+        stamp: 'Black vest',
+        text: 'When creating a clean black vest from the spring-summer collection, designers of the brand relied on the material. The usual nylon for such products has replaced the innovative microfibre with a multilayer structure. Brand: Ermenegildo Zegna; Composition: Polyester: 100%; Lining-polyester: 100%; Finish-leather: 100%; Country of manufacture: Romania. Chest girth:',
+        type: 'Other',
+        sex: 'Male',
+        size: 106,
+        cost: 928,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/dfb888f8efbc76e393c382520fcab362/width/1526/i/ef/0a/4a/de/ef0a4ade-4599-3cba-8301-b4d696e3cf16.jpg',
+        stamp: 'Denim jacket',
+        text: 'To sew a blue denim jacket with a flat shoulder line, the craftsmen used durable elastic cotton. Brand: Palm Angels; Composition: Cotton: 100%; Polyester lining: 65%; Cotton: 35%; Leather:100; Country of manufacture: Italy. Chest girth:',
+        type: 'Other',
+        sex: 'Male',
+        size: 128,
+        cost: 945,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st2.tsum.com/sig/665c91f9f44ed28e3e14e773ce947684/width/1526/i/06/98/f7/39/0698f739-3aed-361b-ab0b-a65f6fb999bf.jpg',
+        stamp: 'Coat in wool and silk',
+        text: 'The checkered blue jacket with half lining fits perfectly on the figure, does not weigh the silhouette and maintains a comfortable microclimate for the body. Brand: L.B.M. 1911; Composition: Wool: 38%; Silk: 34%; Linen: 28%; Viscose lining: 100%; Country of manufacture: Italy. Chest girth:',
+        type: 'Other',
+        sex: 'Male',
+        size: 110,
+        cost: 976,
+    },
+
+    {
+        id: Math.random(),
+        image: 'https://st1.tsum.com/sig/6e30052b0b3d7d5269a08d31d4ebed3c/width/1526/i/53/28/eb/d3/5328ebd3-7969-3aaa-b21f-64b143a55d2c.jpg',
+        stamp: 'Cashmere and cotton shirt',
+        text: 'The grey shirt with a melange effect was made from a particularly soft, pleasant to the touch cashmere with the addition of long fibers carefully cleaned cotton. Brand: Agnona; Composition: Cashmere: 63%; Cotton: 37%; Country of manufacture: Italy. Chest girth:',
+        type: 'Other',
+        sex: 'Male',
+        size: 122,
+        cost: 933,
     },
 ];
 
