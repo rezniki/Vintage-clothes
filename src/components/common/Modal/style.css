@@ -94,21 +94,6 @@
     margin-bottom: 24px;
 }
 
-.filter__apply__button {
-    background-color: #000000CC;
-    color: rgba(255, 255, 255, 0.80);
-    font-size: 33px;
-    font-family: 'Pompiere-Regular';
-    font-weight: 400;
-    line-height: 30px;
-    padding: 8px 22px 8px 24px;
-    width: 45%;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-}
 
 
 

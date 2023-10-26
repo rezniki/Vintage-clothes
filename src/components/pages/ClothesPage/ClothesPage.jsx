@@ -73,7 +73,7 @@ const ClothesPage = () => {
                                 genderdata.map((check) => (
                                     <div className='filter__gender__type'>
                                         <input type='checkbox' id={check.gender} name={check.gender} onChange={() => {
-                                            let filterGenderArray = data.filter((item) => item.sex === check.sex);
+                                            let filterGenderArray = data.filter((item) => item.sex === check.gender);
                                             setFilter(filterGenderArray);
                                             
                                         }}/>
@@ -82,7 +82,6 @@ const ClothesPage = () => {
                                 ))
                             }
                         </div>
-                        <button className='filter__apply__button'>Apply</button>    
                     </Modal>}
                     <h1 className='clothes__title'>Clothes</h1>
                 </div>
