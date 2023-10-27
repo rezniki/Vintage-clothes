@@ -4,8 +4,11 @@ import Instagram from '../../../img/instagram-1.svg';
 import Telegram from '../../../img/telegram-1.svg';
 import Viber from '../../../img/viber-1.svg';
 import Profile from '../../../img/profile-1.svg';
+import LanguageSelector from '../LanguageSelector/LanguageSelector.jsx';
 
 const Header = () => {
+
+    
 
     return (
         <header className='header'>
@@ -24,7 +27,7 @@ const Header = () => {
                     <a className='header__link' href="/bijouterie">Bijouterie</a>
                     <a className='header__link' href="/shoes">Shoes</a>
                     <a className='header__link' href="/other">Other</a>
-                    <p className='header__link'>Language ˅</p>
+                    <LanguageSelector />
                 </nav>
                 <div className='header__icons'>
                     <img className='header__icon' src={Instagram} alt='Instagram'/>
