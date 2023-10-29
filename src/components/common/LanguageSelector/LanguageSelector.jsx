@@ -14,20 +14,24 @@ const LanguageSelector = () => {
     const toggleOptions = () => {
         if (showOptions === false) {
             setshowOptions(true);
-        } else {
+        };
+
+        if (showOptions === true) {
             setshowOptions(false);
-        }
+        };
     };
-    
+
     return (
         <>
-            <p className='language__text' onClick={toggleOptions}>Language ˅</p>
-            {showOptions && (
+            <p className='language__text' onClick={toggleOptions}>
+                {showOptions ?  <>Language ˄</> : <>Language ˅</>}
+                {showOptions && (
                 <div className='language__selector__content'>
                     <p className='language__selector__button' onClick={() => changeLanguage('en')}>{t('English')}</p>
                     <p className='language__selector__button' onClick={() => changeLanguage('ru')}>{t('Russian')}</p>
                 </div>
             )}
+            </p>
         </>
     );
 }
