@@ -3,8 +3,8 @@ import Gramopghone from '../../../img/gramopghone-1.svg';
 import Instagram from '../../../img/instagram-1.svg';
 import Telegram from '../../../img/telegram-1.svg';
 import Viber from '../../../img/viber-1.svg';
-import Profile from '../../../img/profile-1.svg';
 import LanguageSelector from '../LanguageSelector/LanguageSelector.jsx';
+import RegSelector from '../RegSelector/RegSelector.jsx';
 import { useTranslation } from 'react-i18next';
 import i18n from '../LanguageSelector/i18n.js';
 import { useState } from 'react';
@@ -51,7 +51,7 @@ const Header = () => {
                     <img className='header__icon' src={Instagram} alt='Instagram'/>
                     <img className='header__icon' src={Telegram} alt='Telegram'/>
                     <img className='header__icon' src={Viber} alt='Viber'/>
-                    <img className='header__icon' src={Profile} alt='Profile'/>
+                    <RegSelector />
                 </div>
             </div>
         </header>

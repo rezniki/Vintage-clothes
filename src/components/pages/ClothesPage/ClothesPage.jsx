@@ -67,9 +67,9 @@ const ClothesPage = () => {
                 <div className='clothes__filters'>
                     <h3 className='clothes__filter' onClick={modalOpenClick}>{t('Filters')}</h3>
                     {isModalShow && <Modal title='Filters' modalCloseClick={modalCloseClick}>
-                        <h3 className='filter__price' onChange={showLanguage}>Price filter</h3>
+                        <h3 className='filter__price'>Price filter</h3>
                         <MultiRangeSlider min={0} max={9999} step={500} minValue={minValue} maxValue={maxValue} style={SliderStyle} label={Label} ruler={Ruler} barInnerColor='#000000' thumbLeftColor='#000000' thumbRightColor='#000000' onInput={(e) => {handleInput(e)}}/>
-                        <h3 className='filter__clothes__type' onChange={showLanguage}>Clothes type</h3>
+                        <h3 className='filter__clothes__type'>Clothes type</h3>
                         <div className='filter__content__type'>
                             {
                                 filterdata.map((check) => (
@@ -84,7 +84,7 @@ const ClothesPage = () => {
                                 )) 
                             }
                         </div>
-                        <h3 className='filter__genders' onChange={showLanguage}>Sex</h3>
+                        <h3 className='filter__genders'>Sex</h3>
                         <div className='filter__content__gender'>
                             {
                                 genderdata.map((check) => (
