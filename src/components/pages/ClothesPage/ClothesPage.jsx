@@ -7,6 +7,8 @@ import Modal from '../../common/Modal/Modal.jsx';
 import MultiRangeSlider from 'multi-range-slider-react';
 import { filterdata } from './data.js';
 import { genderdata } from './data.js';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../common/LanguageSelector/i18n.js';
 import { useState } from 'react';
 
 const ClothesPage = () => {
@@ -14,8 +16,23 @@ const ClothesPage = () => {
     const [isModalShow, setModalShow] = useState(false);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(9999);
-
     const [filter, setFilter] = useState(data);
+    const { t } = useTranslation('translation', { i18n });
+    const [showChangeLanguage, setShowChangeLanguage] = useState();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    const showLanguage = () => {
+        if (showChangeLanguage === false) {
+            setShowChangeLanguage(changeLanguage('en'));
+        };
+
+        if (showChangeLanguage === true) {
+            setShowChangeLanguage(changeLanguage('ru'));
+        };
+    }
     
     const SliderStyle = {
         border: 'none',
@@ -48,11 +65,11 @@ const ClothesPage = () => {
             <Header/>
             <div className='clothes'>
                 <div className='clothes__filters'>
-                    <h3 className='clothes__filter' onClick={modalOpenClick}>Filters ˅</h3>
+                    <h3 className='clothes__filter' onClick={modalOpenClick}>{t('Filters')}</h3>
                     {isModalShow && <Modal title='Filters' modalCloseClick={modalCloseClick}>
-                        <h3 className='filter__price'>Price filter</h3>
+                        <h3 className='filter__price' onChange={showLanguage}>Price filter</h3>
                         <MultiRangeSlider min={0} max={9999} step={500} minValue={minValue} maxValue={maxValue} style={SliderStyle} label={Label} ruler={Ruler} barInnerColor='#000000' thumbLeftColor='#000000' thumbRightColor='#000000' onInput={(e) => {handleInput(e)}}/>
-                        <h3 className='filter__clothes__type'>Clothes type</h3>
+                        <h3 className='filter__clothes__type' onChange={showLanguage}>Clothes type</h3>
                         <div className='filter__content__type'>
                             {
                                 filterdata.map((check) => (
@@ -67,7 +84,7 @@ const ClothesPage = () => {
                                 )) 
                             }
                         </div>
-                        <h3 className='filter__genders'>Sex</h3>
+                        <h3 className='filter__genders' onChange={showLanguage}>Sex</h3>
                         <div className='filter__content__gender'>
                             {
                                 genderdata.map((check) => (
@@ -82,7 +99,7 @@ const ClothesPage = () => {
                             }
                         </div>
                     </Modal>}
-                    <h1 className='clothes__title'>Clothes</h1>
+                    <h1 className='clothes__title' onChange={showLanguage}>{t('ClothesFilter')}</h1>
                 </div>
                 <div className='clothes__products'>
                     <Clothes filter={filter} />

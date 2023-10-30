@@ -5,7 +5,7 @@
 
 .clothes__filters {
     background: #1D1D1D;
-    padding: 30px;
+    padding: 33px 0 30px 41px;
     display: flex;
     justify-content: space-between;
 }
@@ -27,7 +27,7 @@
     font-weight: 400;
     line-height: 30px;
     margin-top: 30px;
-    width: 52.6%;
+    width: 54%;
 }
 
 .clothes__products {

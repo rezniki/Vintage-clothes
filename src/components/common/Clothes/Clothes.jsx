@@ -3,10 +3,28 @@ import Basket from '../../../img/basket-1.svg';
 import Modal from '../Modal/Modal.jsx';
 import { useState } from 'react';
 import Busketfull from '../../../img/black-basket.svg';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../common/LanguageSelector/i18n.js';
 
 function Clothes(props) {
     const [isModalShow, setModalShow] = useState(false);
     const [currentCard, setCurrentCard] = useState();
+    const { t } = useTranslation('translation', { i18n });
+    const [showChangeLanguage, setShowChangeLanguage] = useState();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    const showLanguage = () => {
+        if (showChangeLanguage === false) {
+            setShowChangeLanguage(changeLanguage('en'));
+        };
+
+        if (showChangeLanguage === true) {
+            setShowChangeLanguage(changeLanguage('ru'));
+        };
+    }
 
     const modalCloseClick = () => {
         if (isModalShow === true) {
@@ -24,7 +42,7 @@ function Clothes(props) {
                     }}>
                         <img className='clothes__product__image' src={item.image} alt='Cloth'/>
                         <div className='clothes__product__description'>
-                            <p className='clothes__product__cost'>Cost: {item.cost}$</p>
+                            <p className='clothes__product__cost' onChange={showLanguage}>{t('Cost')}: {item.cost}$</p>
                             <img className='clothes__product__basket' src={Basket} alt='Basket'/>
                         </div>
                     </div>
