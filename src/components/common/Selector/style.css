@@ -6,7 +6,7 @@
 
 .header__register__content {
     background-color: rgba(230, 235, 240, 0.708);
-    text-align: center;
+    padding-left: 10px;
 }
 
 .header__register__button {

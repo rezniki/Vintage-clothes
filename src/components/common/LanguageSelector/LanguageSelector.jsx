@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from './i18n.js';
 import { useState } from 'react';
 
-const LanguageSelector = ({active, setActive}) => {
+const LanguageSelector = () => {
     const { t } = useTranslation('translation', { i18n });
     const [showOptions, setshowOptions] = useState(false);
     

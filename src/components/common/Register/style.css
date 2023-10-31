@@ -1,0 +1,63 @@
+.register__photo {
+    margin-bottom: 35px;
+}
+
+.register__photo__user {
+    width: 20%;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.register__input {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.register__input__username {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 26px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    width: 90%;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.register__input__password {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 26px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    width: 90%;
+    margin-bottom: 28px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    margin-left: 40px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #050505;
+}
+
+.register__remember__text {
+    font-size: 27px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 16px;
+}
+
