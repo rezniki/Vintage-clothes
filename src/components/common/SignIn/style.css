@@ -10,10 +10,27 @@
 }
 
 .sign__input {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
+}
+
+.sign__username {
+    display: flex;
+}
+
+.sign__username__symbol {
+    background-color: #060606;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 11px;
+    width: 80px;
+    height: 52px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .sign__input__username {
@@ -25,7 +42,27 @@
     width: 90%;
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.sign__password {
+    display: flex;
+}
+
+.sign__password__symbol {
+    background-color: #060606;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 26px;
+    width: 80px;
+    height: 37px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .sign__input__password {
@@ -37,7 +74,8 @@
     width: 90%;
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .sign__in__button {

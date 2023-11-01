@@ -45,8 +45,14 @@ const Register = () => {
                     <img className='register__photo__user' src={User} alt='User'/>
                 </div>
                 <div className='register__input'>
-                    <input className='register__input__username' type='text' placeholder='Username'/>
-                    <input className='register__input__password' type='text' placeholder='Password'/>
+                    <div className='register__username'>
+                        <p className='register__username__symbol'>@</p>
+                        <input className='register__input__username' type='text' placeholder='Username'/>
+                    </div>
+                    <div className='register__password'>
+                        <p className='register__password__symbol'>*</p>
+                        <input className='register__input__password' type='text' placeholder='Password'/>
+                    </div>
                 </div>
                 <div className='register__remember'>
                     <input type='checkbox' id='remember' name='remember'/>

@@ -45,8 +45,14 @@ const SignIn = () => {
                     <img className='sign__photo__user' src={User} alt='User'/>
                 </div>
                 <div className='sign__input'>
-                    <input className='sign__input__username' type='text' placeholder='Username'/>
-                    <input className='sign__input__password' type='text' placeholder='Password'/>
+                    <div className='sign__username'>
+                        <p className='sign__username__symbol'>@</p>
+                        <input className='sign__input__username' type='text' placeholder='Username'/>
+                    </div>
+                    <div className='sign__password'>
+                        <p className='sign__password__symbol'>*</p>
+                        <input className='sign__input__password' type='text' placeholder='Password'/>
+                    </div>
                 </div>
                 <button className='sign__in__button'>Sign in</button>
             </Modal>}

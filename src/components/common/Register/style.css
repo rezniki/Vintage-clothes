@@ -10,22 +10,59 @@
 }
 
 .register__input {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
+}
+
+.register__username {
+    display: flex;
+}
+
+.register__username__symbol {
+    background-color: #060606;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 11px;
+    width: 80px;
+    height: 52px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .register__input__username {
     color: rgba(0, 0, 0, 0.75);
-    font-size: 26px;
+    font-size: 28px;
     font-family: 'Pompiere-Regular';
     font-weight: 400;
     line-height: 30px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.register__password {
+    display: flex;
+}
+
+.register__password__symbol {
+    background-color: #060606;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 26px;
+    width: 80px;
+    height: 37px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .register__input__password {
@@ -34,10 +71,11 @@
     font-family: 'Pompiere-Regular';
     font-weight: 400;
     line-height: 30px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .register__remember {
