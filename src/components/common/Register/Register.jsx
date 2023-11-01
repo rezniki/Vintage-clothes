@@ -48,8 +48,11 @@ const Register = () => {
                     <input className='register__input__username' type='text' placeholder='Username'/>
                     <input className='register__input__password' type='text' placeholder='Password'/>
                 </div>
-                <input type='checkbox' id='remember' name='remember'/>
-                <label className='register__remember__text' for='remember'>Remember me</label>
+                <div className='register__remember'>
+                    <input type='checkbox' id='remember' name='remember'/>
+                    <label className='register__remember__text' for='remember'>Remember me</label>
+                </div>
+                <button className='register__complete'>Complete</button>
             </Modal>}
         </>
     );

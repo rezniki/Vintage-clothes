@@ -1,5 +1,5 @@
 .register__photo {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .register__photo__user {
@@ -23,8 +23,8 @@
     font-weight: 400;
     line-height: 30px;
     width: 90%;
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     border-radius: 30px;
 }
 
@@ -35,9 +35,13 @@
     font-weight: 400;
     line-height: 30px;
     width: 90%;
-    margin-bottom: 28px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     border-radius: 30px;
+}
+
+.register__remember {
+    margin-bottom: 15px;
 }
 
 input[type='checkbox'] {
@@ -60,4 +64,21 @@ input[type='checkbox'] {
     line-height: 30px;
     margin-left: 16px;
 }
+
+.register__complete {
+    background-color: #000000CC;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 8px 22px 8px 24px;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 

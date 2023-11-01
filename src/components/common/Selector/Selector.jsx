@@ -1,6 +1,7 @@
 import './style.css';
 import Profile from '../../../img/profile-1.svg';
 import Register from '../Register/Register.jsx';
+import SignIn from '../SignIn/SignIn.jsx';
 import { useState } from 'react';
 
 const Selector = () => {
@@ -23,10 +24,9 @@ const Selector = () => {
             {showOptions && (
                 <div className='header__register__content'>
                     <Register />
-                    {/* <p className='header__sign__button' onChange={showLanguage}>{t('Sign')}</p> */}
+                    <SignIn />
                 </div>
             )}
-            {/* {isModalShow && <Modal title='Sign in' modalCloseClick={modalCloseClick}/>} */}
         </>
     );
 }
