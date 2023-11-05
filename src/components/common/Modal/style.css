@@ -64,7 +64,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .modal__product__cost {
@@ -94,6 +93,63 @@
     margin-bottom: 24px;
 }
 
+.cart__product {
+    margin-bottom: 50px;
+}
+
+.cart__product__image {
+    width: 20%;
+    height: 200px;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cart__product__description {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(56, 55, 55, 0.8);
+    width: 17.4%;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cart__product__cost {
+    color: white;
+    font-size: 19px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cart__button__delete {
+    color: white;
+    font-size: 50px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.cart__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__summary__cost {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 28px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.cart__payment {
+    width: 40px;
+    cursor: pointer;
+}
 
 
 

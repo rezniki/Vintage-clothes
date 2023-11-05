@@ -10,6 +10,7 @@ const Clothes = (props) => {
     const [isModalShow, setModalShow] = useState(false);
     const [currentCard, setCurrentCard] = useState();
     const [isCartModalShow, setCartModalShow] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
 
@@ -33,6 +34,12 @@ const Clothes = (props) => {
         }
     }
     
+    const handleAddToCard = (card) => {
+        setSelectedCard(card);
+        setModalShow(false);
+        setCartModalShow(true);
+    } 
+
     return (
         <>
             {
@@ -56,11 +63,21 @@ const Clothes = (props) => {
                 </div>
                 <div className='modal__cost'>
                     <p className='modal__product__cost'>Cost: {currentCard.cost}$</p>
-                    <img className='modal__product__basket' src={Busketfull} alt='Bucketfull'/>
+                    <img className='modal__product__basket' src={Busketfull} alt='Bucketfull' onClick={() => handleAddToCard(currentCard)}/>
                 </div>
             </Modal>}
             {isCartModalShow && <Modal title='Cart' modalCloseClick={() => setCartModalShow(false)}>
-                
+                <div className='cart__product'>
+                    <img className='cart__product__image' src={selectedCard.image} alt='Cloth'/>
+                    <div className='cart__product__description'>
+                        <p className='cart__product__cost'>Cost: {selectedCard.cost}$</p>
+                        <p className='cart__button__delete'>-</p>
+                    </div>
+                </div>
+                <div className='cart__summary'>
+                    <p className='cart__summary__cost'>Summary: {selectedCard.cost}$</p>
+                    <img className='cart__payment' src={Busketfull} alt='Busketfull'/>
+                </div>
             </Modal>}
         </>
     );
