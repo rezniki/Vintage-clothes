@@ -103,68 +103,75 @@ const Clothes = (props) => {
                 </div>
             </Modal>}
             {isCheckOut && <Modal title='Checkout' modalCloseClick={() => setCheckOut(false)}>
-                <div className='checkout__credit__card'>
-                    <ReactCreditCards 
-                        number={state.number} 
-                        expiry={state.expiry}
-                        cvc={state.cvc}
-                        name={state.name}
-                        focused={state.focus}
-                    />
-                </div>
-                <div className='checkout__form__groups'>
-                    <form className='checkout__form__group'>
-                        <input
-                            className='checkout__form__control'
-                            type="number"
-                            name="number"
-                            placeholder="Card Number"
-                            pattern="[\d|]{16,22}"
-                            required
-                            value={state.number}
-                            onChange={handleInputChange}
-                            onFocus={handleInputFocus}
+                <div className='checkout__content'>
+                    <div className='checkout__credit__card'>
+                        <ReactCreditCards 
+                            number={state.number} 
+                            expiry={state.expiry}
+                            cvc={state.cvc}
+                            name={state.name}
+                            focused={state.focus}
                         />
-                    </form>
+                    </div>
+                    <div className='checkout__form__groups'>
+                        <form className='checkout__form__group'>
+                            <input
+                                className='checkout__form__control'
+                                type="number"
+                                name="number"
+                                placeholder="Card Number"
+                                pattern="[\d|]{16,22}"
+                                required
+                                value={state.number}
+                                onChange={handleInputChange}
+                                onFocus={handleInputFocus}
+                            />
+                        </form>
 
-                    <form className='checkout__form__group'>
-                        <input
-                            className='checkout__form__control'
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            required
-                            onChange={handleInputChange}
-                            onFocus={handleInputFocus}
-                        />
-                    </form>
-
-                    <div className='checkout__form__row'>
-                        <form className='checkout__form__data'>
-                            <input 
-                                type="tel"
-                                name="expiry"
-                                placeholder="Valid Thru"
-                                pattern="\d\d/\d\d"
+                        <form className='checkout__form__group'>
+                            <input
+                                className='checkout__form__control'
+                                type="text"
+                                name="name"
+                                placeholder="Name"
                                 required
                                 onChange={handleInputChange}
                                 onFocus={handleInputFocus}
                             />
                         </form>
 
-                        <form className='checkout__form__data'>
-                            <input 
-                                type="tel"
-                                name="cvc"
-                                placeholder="CVC"
-                                pattern="\d{3,4}"
-                                required
-                                onChange={handleInputChange}
-                                onFocus={handleInputFocus}
-                            />
-                        </form>
+                        <div className='checkout__form__row'>
+                            <form className='checkout__form__values'>
+                                <input 
+                                    className='checkout__form__data'
+                                    type="tel"
+                                    name="expiry"
+                                    placeholder="Valid Thru"
+                                    pattern="\d\d/\d\d"
+                                    required
+                                    onChange={handleInputChange}
+                                    onFocus={handleInputFocus}
+                                />
+                            </form>
+
+                            <form className='checkout__form__values'>
+                                <input 
+                                    className='checkout__form__cvc'
+                                    type="tel"
+                                    name="cvc"
+                                    placeholder="CVC"
+                                    pattern="\d{3,4}"
+                                    required
+                                    onChange={handleInputChange}
+                                    onFocus={handleInputFocus}
+                                />
+                            </form>
+                        </div>
                     </div>
                 </div>
+                <p className='checkout__address'>Delivery throughout Belarus</p>
+                <input className='checkout__address__text' type='text' placeholder='Enter your address'/>
+                <button className='checkout__confirm'>Confirm</button>
             </Modal>}
         </>
     );

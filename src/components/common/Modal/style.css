@@ -151,23 +151,99 @@
     cursor: pointer;
 }
 
-.checkout__credit__card{
+.checkout__content {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.checkout__credit__card{
+    width: 55%;
+}
+
+.checkout__form__group {
+    margin-bottom: 22px;
 }
 
 .checkout__form__control {
     display: block;
-    width: 30%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 15px;
+    width: 85%;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    font-family: 'Pompiere-Regular';
     font-weight: 400;
     color: #495057;
     background-color: #fff;
-    background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 5px;
+}
+
+.checkout__form__row {
+    display: flex;
+}
+
+.checkout__form__data {
+    display: block;
+    width: 80%;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.checkout__form__cvc {
+    display: block;
+    width: 70%;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.checkout__address {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 30px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 30px 60px;
+}
+
+.checkout__address__text {
+    margin: 0 0 50px 60px;
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 64%;
+}
+
+.checkout__confirm {
+    background-color: #000000CC;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 33px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 8px 22px 8px 24px;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 
