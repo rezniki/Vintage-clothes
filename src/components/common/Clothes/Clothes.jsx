@@ -117,7 +117,7 @@ const Clothes = (props) => {
                         <form className='checkout__form__group'>
                             <input
                                 className='checkout__form__control'
-                                type="number"
+                                type="tel"
                                 name="number"
                                 placeholder="Card Number"
                                 pattern="[\d|]{16,22}"
