@@ -3,8 +3,8 @@ import './style.css';
 import Banner from '../../../img/banner.png';
 import Footer from '../../common/Footer/Footer.jsx';
 
-
 const MainPage = () => {
+
     return (
         <>
             <Header/>

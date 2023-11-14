@@ -10,6 +10,14 @@ const Register = () => {
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
     const [isModalShow, setModalShow] = useState(false);
+    let [userData, setUserData] = useState([
+        {
+            userName: '',
+            password: null
+        }
+    ]);
+    let [newUserName, setNewUserName] = useState();
+    let [newPassword, setNewPssword] = useState();
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -47,18 +55,32 @@ const Register = () => {
                 <div className='register__input'>
                     <div className='register__username'>
                         <p className='register__username__symbol'>@</p>
-                        <input className='register__input__username' type='text' placeholder='Username'/>
+                        <input className='register__input__username' type='text' placeholder='Username' value={newUserName} 
+                            onChange={(event) => {
+                                setNewUserName(event.target.value);
+                            }}/>
                     </div>
                     <div className='register__password'>
                         <p className='register__password__symbol'>*</p>
-                        <input className='register__input__password' type='text' placeholder='Password'/>
+                        <input className='register__input__password' type='text' placeholder='Password' value={newPassword} 
+                            onChange={(event) => {
+                                setNewPssword(event.target.value);
+                            }}/>
                     </div>
                 </div>
                 <div className='register__remember'>
                     <input type='checkbox' id='remember' name='remember'/>
                     <label className='register__remember__text' for='remember'>Remember me</label>
                 </div>
-                <button className='register__complete'>Complete</button>
+                <button className='register__complete' onClick={() => {
+                    setUserData([
+                        ...userData,
+                        {
+                            userName: newUserName,
+                            password: newPassword
+                        }
+                    ])
+                }}>Complete</button>
             </Modal>}
         </>
     );
