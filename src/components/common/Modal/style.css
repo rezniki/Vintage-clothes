@@ -246,6 +246,18 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+
+    .modal {
+        margin: 5px;
+    }
+    
+    .modal__content {
+        padding: 20px;
+        width: 70vw;
+    }
+}
+
 
 
 
