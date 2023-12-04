@@ -107,6 +107,17 @@ input[type='checkbox'] {
     margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+
+    .clothes {
+        padding: 120px 88px 73px 89px;
+        width: 100%;
+    }
+
+    .clothes__title {
+        width: 59%;
+    }    
+}
 
 
 

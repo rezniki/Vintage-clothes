@@ -27,3 +27,14 @@
     font-weight: 400;
     line-height: 30px;
 }
+
+@media (max-width: 768px) {
+
+    .clothes__product__image {
+        width: 68%;
+    }
+
+    .clothes__product__description {
+        width: 59.3%;
+    }
+}
