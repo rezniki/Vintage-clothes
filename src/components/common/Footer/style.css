@@ -101,3 +101,25 @@
     text-align: right;
     text-decoration: none; 
 }
+
+@media (max-width: 768px) {
+
+    .footer__container {
+        background: #141414;
+        padding: 30px 50px 30px 50px;
+        width: 110%;
+    }
+
+    .footer__company {
+        width: 35%;
+    }
+
+    .footer__links {
+        width: 25%;
+    }
+
+    .footer__contacts {
+        width: 38%;
+    }
+}
+
