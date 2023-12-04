@@ -6,3 +6,12 @@
 .main__banner {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    
+    .main {
+        width: 100%;
+        padding: 170px 85px 75px 85px;
+    }
+
+}
