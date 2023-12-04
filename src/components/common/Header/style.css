@@ -19,7 +19,6 @@
     height: 50px;
     align-items: center;
     padding-right: 10px;
-    
 }
 
 .header__logo {
@@ -52,7 +51,8 @@
 
 .header__menu {
     display: flex;
-    margin: 35px 0px 0px 70px;
+    align-items: center;
+    margin-left: 50px;
 }
 
 .header__link {
@@ -66,11 +66,41 @@
 }
 
 .header__icons {
-    margin: 38px 0px 0px 70px;
+    display: flex;
+    margin-left: 50px;
 }
 
 .header__icon {
     padding-left: 30px;
     width: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+    .header__gramopghone {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__logo {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .header__menu {
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 60%;
+    }
+
+    .header__icons {
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .header__icon {
+        width: 23px;
+        cursor: pointer;
+    }
 }
