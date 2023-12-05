@@ -10,7 +10,7 @@
 }
 
 .register__input {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -118,5 +118,6 @@ input[type='checkbox'] {
     border-radius: 30px;
     cursor: pointer;
 }
+
 
 
