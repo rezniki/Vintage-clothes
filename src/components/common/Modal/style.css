@@ -256,6 +256,14 @@
         padding: 20px;
         width: 70vw;
     }
+
+    .cart__product__image {
+        width: 28%;
+    }
+
+    .cart__product__description {
+        width: 24.3%;
+    }
 }
 
 
