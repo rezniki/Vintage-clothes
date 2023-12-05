@@ -264,6 +264,26 @@
     .cart__product__description {
         width: 24.3%;
     }
+
+    .checkout__content {
+        margin: 0 0 10px 0;
+    }
+
+    .checkout__credit__card {
+        margin-right: 15px;
+    }
+
+    .checkout__form__group {
+        margin-bottom: 22px;
+    }
+
+    .checkout__address {
+        margin: 0 0 20px 20px;
+    }
+
+    .checkout__address__text {
+        margin: 0 0 25px 60px;
+    }
 }
 
 
