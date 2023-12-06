@@ -18,6 +18,10 @@
 @media (max-width: 320px) {
 
     .main {
-        padding: 200px 0px 0px 0px;
+        padding: 280px 112px 50px 20px;
+    }
+
+    .main__banner {
+        width: 130%;
     }
 }
