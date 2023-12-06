@@ -138,6 +138,31 @@ input[type='checkbox'] {
     }
 }
 
+@media (max-width: 320px) {
+
+    input[type='checkbox'] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid #050505;
+    }
+
+    .filter__content__type {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 10px 0px 0px 0px;
+    }
+
+    .filter__cloth__title {
+        font-size: 20px;
+    }
+}
+
 
 
 

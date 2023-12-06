@@ -37,7 +37,7 @@ const ClothesPage = () => {
     const SliderStyle = {
         border: 'none',
         boxShadow: 'none',
-        padding: '25px 10px',  
+        padding: '11px 10px',  
     };
 
     const modalCloseClick = () => {

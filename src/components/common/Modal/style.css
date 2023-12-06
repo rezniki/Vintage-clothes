@@ -286,6 +286,15 @@
     }
 }
 
+@media (max-width: 320px) {
+
+    .modal__content {
+        padding: 20px;
+        width: 90vw;
+    }
+
+    
+}
 
 
 
