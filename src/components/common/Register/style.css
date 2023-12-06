@@ -119,5 +119,24 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
+@media (max-width: 320px) {
+    
+    .register__photo__user {
+        width: 30%;
+    }
+
+    .register__input {
+        width: 100%;
+    }
+
+    .register__password {
+        margin-bottom: 10px;
+    }
+
+    .register__complete {
+        width: 70%;
+    }
+}
+
 
 
