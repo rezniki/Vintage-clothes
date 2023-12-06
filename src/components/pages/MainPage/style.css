@@ -11,7 +11,13 @@
     
     .main {
         width: 100%;
-        padding: 170px 85px 75px 85px;
+        padding: 170px 85px 75px 92px;
     }
+}
 
+@media (max-width: 320px) {
+
+    .main {
+        padding: 200px 0px 0px 0px;
+    }
 }
