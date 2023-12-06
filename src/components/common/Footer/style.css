@@ -123,3 +123,30 @@
     }
 }
 
+@media (max-width: 320px) {
+
+    .footer__container {
+        display: block;
+    }
+
+    .footer__company {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer__company__subtext {
+        text-align: center;
+    }
+
+    .footer__links {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__contacts {
+        width: 100%;
+    }
+}
+
+
+
