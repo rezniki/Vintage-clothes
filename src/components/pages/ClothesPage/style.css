@@ -119,6 +119,25 @@ input[type='checkbox'] {
     }
 }
 
+@media (max-width: 320px) {
+
+    .clothes {
+        padding: 220px 70px 80px 62px;
+    }
+
+    .clothes__filters {
+        padding: 33px 0 30px 20px;
+    }
+
+    .clothes__title {
+        width: 66%;
+    }
+
+    .clothes__products {
+        padding: 50px 50px 80px 80px;
+    }
+}
+
 
 
 

@@ -38,3 +38,14 @@
         width: 59.3%;
     }
 }
+
+@media (max-width: 320px) {
+
+    .clothes__product__image {
+        width: 75%;
+    }
+
+    .clothes__product__description {
+        width: 65%;
+    }
+}
