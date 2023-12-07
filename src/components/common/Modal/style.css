@@ -296,6 +296,14 @@
     .modal__text {
         width: 100%;
     }
+
+    .cart__product__image{
+        width: 38%;
+    }
+
+    .cart__product__description {
+        width: 32.7%;
+    }
 }
 
 
