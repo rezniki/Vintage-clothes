@@ -289,8 +289,12 @@
 @media (max-width: 320px) {
 
     .modal__content {
-        padding: 20px;
-        width: 90vw;
+        padding: 15px;
+        width: 120vw;
+    }
+
+    .modal__text {
+        width: 100%;
     }
 }
 
