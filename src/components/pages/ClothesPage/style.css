@@ -144,8 +144,8 @@ input[type='checkbox'] {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        width: 10px;
-        height: 10px;
+        width: 14px;
+        height: 14px;
         border-radius: 0;
         outline: none;
         cursor: pointer;
@@ -155,11 +155,23 @@ input[type='checkbox'] {
     .filter__content__type {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        padding: 10px 0px 0px 0px;
+        padding: 10px 5px 0 3px;
     }
 
     .filter__cloth__title {
-        font-size: 20px;
+        font-size: 21px;
+    }
+
+    .filter__content__gender {
+        padding: 10px 5px 0 3px;
+    }
+
+    .filter__gender__type {
+        width: 40%;
+    }
+
+    .filter__sex {
+        font-size: 21px;
     }
 }
 
