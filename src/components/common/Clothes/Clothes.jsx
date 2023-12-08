@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../common/LanguageSelector/i18n.js';
 import ReactCreditCards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
+import 'react-credit-cards-2/dist/lib/styles.scss';
 
 const Clothes = (props) => {
     const [isModalShow, setModalShow] = useState(false);
