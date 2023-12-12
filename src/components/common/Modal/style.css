@@ -166,7 +166,6 @@
 }
 
 .checkout__form__control {
-    display: block;
     width: 85%;
     padding: 15px 10px 15px 10px;
     font-size: 22px;
@@ -270,7 +269,7 @@
     }
 
     .checkout__credit__card {
-        margin-right: 15px;
+        margin-bottom: 5px;
     }
 
     .checkout__form__group {
@@ -303,6 +302,53 @@
 
     .cart__product__description {
         width: 32.7%;
+    }
+
+    .checkout__content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .checkout__form__control {
+        padding: 5px;
+    }
+
+    .checkout__credit__card {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .checkout__form__groups {
+        margin-bottom: 10px;
+    }
+
+    .checkout__form__group {
+        margin-bottom: 15px;
+    }
+
+    .checkout__form__data {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .checkout__form__cvc {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .checkout__address {
+        margin: 0 0 15px 0;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .checkout__address__text {
+        padding: 5px 5px 5px 5px;
+        margin: 0 0 20px 50px;
+        width: 72%;
+    }
+
+    .checkout__confirm {
+        font-size: 25px;
+        padding: 5px 15px 5px 15px;
     }
 }
 
