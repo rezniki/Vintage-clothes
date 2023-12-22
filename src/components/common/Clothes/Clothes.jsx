@@ -2,14 +2,15 @@ import './style.css';
 import Basket from '../../../img/basket-1.svg';
 import Modal from '../Modal/Modal.jsx';
 import Busketfull from '../../../img/black-basket.svg';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../common/LanguageSelector/i18n.js';
 import ReactCreditCards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import 'react-credit-cards-2/dist/lib/styles.scss';
+import axios from 'axios';
 
-const Clothes = (props) => {
+const Clothes = () => {
     const [isModalShow, setModalShow] = useState(false);
     const [currentCard, setCurrentCard] = useState();
     const [isCartModalShow, setCartModalShow] = useState(false);
@@ -17,6 +18,7 @@ const Clothes = (props) => {
     const [isCheckOut, setCheckOut] = useState(false);
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
+    const [cards, setCards] = useState([]);
     const [state, setState] = useState({
         number: '',
         expiry: '',
@@ -60,18 +62,33 @@ const Clothes = (props) => {
         setState((prev) => ({ ...prev, focus: evt.target.name }));
     };
 
+    useEffect(() => {
+        const fetchCards = async() => {
+            try {
+                const response = await axios.get('https://657b3715394ca9e4af13fd34.mockapi.io/cards');
+
+                setCards(response.data);
+            } catch (error) {
+                console.error('Error fetching cards:', error);
+            }
+        };
+        
+        fetchCards();
+    }, []);
+
 
     return (
         <>
             {
-                props.filter.map((item) => (
-                    <div className='clothes__product' onClick={() => {
-                        setCurrentCard(item);
+                cards.map((card) => (
+                    <div key={card.id} className='clothes__product' onClick={() => {
+                        setCurrentCard(card);
                         setModalShow(true);
+                        console.log(card);
                     }}>
-                        <img className='clothes__product__image' src={item.image} alt='Cloth'/>
+                        <img className='clothes__product__image' src={card.image} alt='Cloth'/>
                         <div className='clothes__product__description'>
-                            <p className='clothes__product__cost' onChange={showLanguage}>{t('Cost')}: {item.cost}$</p>
+                            <p className='clothes__product__cost' onChange={showLanguage}>{t('Cost')}: {card.cost}$</p>
                             <img className='clothes__product__basket' src={Basket} alt='Basket' />
                         </div>
                     </div>
