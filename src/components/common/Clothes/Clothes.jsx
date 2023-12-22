@@ -76,7 +76,6 @@ const Clothes = () => {
         fetchCards();
     }, []);
 
-
     return (
         <>
             {
