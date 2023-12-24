@@ -2,7 +2,7 @@ import './style.css';
 import Basket from '../../../img/basket-1.svg';
 import Modal from '../Modal/Modal.jsx';
 import Busketfull from '../../../img/black-basket.svg';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../common/LanguageSelector/i18n.js';
 import ReactCreditCards from 'react-credit-cards-2';

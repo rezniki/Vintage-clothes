@@ -75,6 +75,10 @@ const ClothesPage = () => {
         fetchCards();
     }, []);
 
+    useEffect (() => {
+        setFilter(cards);
+    }, [cards])
+
     return (
         <>
             <Header/>
