@@ -8,7 +8,6 @@ import i18n from '../../common/LanguageSelector/i18n.js';
 import ReactCreditCards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import 'react-credit-cards-2/dist/lib/styles.scss';
-import axios from 'axios';
 
 const Clothes = (props) => {
     const [isModalShow, setModalShow] = useState(false);
@@ -18,7 +17,6 @@ const Clothes = (props) => {
     const [isCheckOut, setCheckOut] = useState(false);
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
-    const [cards, setCards] = useState([]);
     const [state, setState] = useState({
         number: '',
         expiry: '',
@@ -47,8 +45,8 @@ const Clothes = (props) => {
         }
     }
     
-    const handleAddToCard = (card) => {
-        setSelectedCard(card);
+    const handleAddToCard = (item) => {
+        setSelectedCard(item);
         setModalShow(false);
         setCartModalShow(true);
     } 
@@ -61,20 +59,6 @@ const Clothes = (props) => {
     const handleInputFocus = (evt) => {
         setState((prev) => ({ ...prev, focus: evt.target.name }));
     };
-
-    useEffect(() => {
-        const fetchCards = async() => {
-            try {
-                const response = await axios.get('https://657b3715394ca9e4af13fd34.mockapi.io/cards');
-
-                setCards(response.data);
-            } catch (error) {
-                console.error('Error fetching cards:', error);
-            }
-        };
-        
-        fetchCards();
-    }, []);
 
     return (
         <>
