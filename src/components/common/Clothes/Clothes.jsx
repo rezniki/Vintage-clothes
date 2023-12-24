@@ -10,7 +10,7 @@ import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import 'react-credit-cards-2/dist/lib/styles.scss';
 import axios from 'axios';
 
-const Clothes = () => {
+const Clothes = (props) => {
     const [isModalShow, setModalShow] = useState(false);
     const [currentCard, setCurrentCard] = useState();
     const [isCartModalShow, setCartModalShow] = useState(false);
@@ -79,7 +79,7 @@ const Clothes = () => {
     return (
         <>
             {
-                cards.map((card) => (
+                props.filter.map((card) => (
                     <div key={card.id} className='clothes__product' onClick={() => {
                         setCurrentCard(card);
                         setModalShow(true);

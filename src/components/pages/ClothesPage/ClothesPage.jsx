@@ -8,16 +8,14 @@ import { filterdata } from './data.js';
 import { genderdata } from './data.js';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../common/LanguageSelector/i18n.js';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
 
 const ClothesPage = () => {
 
     const [isModalShow, setModalShow] = useState(false);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(9999);
-    const [cards, setCards] = useState([]);
-    const [filter, setFilter] = useState(cards);
+    const [filter, setFilter] = useState();
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
 
@@ -60,19 +58,6 @@ const ClothesPage = () => {
 
     const Label = Boolean(true);
     const Ruler = Boolean(false);
-
-    useEffect(() => {
-        const fetchCards = async() => {
-            try {
-                const response = await axios.get('https://657b3715394ca9e4af13fd34.mockapi.io/cards');
-                setCards(response.data);
-            } catch (error) {
-                console.error('Error fetching cards:', error);
-            }
-        };
-        
-        fetchCards();
-    }, []);
 
     return (
         <>
@@ -118,6 +103,9 @@ const ClothesPage = () => {
                 </div>
                 <div className='clothes__products'>
                     <Clothes filter={filter} />
+                    {
+                        console.log(filter)
+                    }
                 </div>
             </div>
             <Footer/>
