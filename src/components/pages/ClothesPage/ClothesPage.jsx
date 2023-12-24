@@ -1,7 +1,6 @@
 import Header from '../../common/Header/Header.jsx';
 import './style.css';
 import Clothes from '../../common/Clothes/Clothes.jsx';
-import { data } from './data.js';
 import Footer from '../../common/Footer/Footer.jsx';
 import Modal from '../../common/Modal/Modal.jsx';
 import MultiRangeSlider from 'multi-range-slider-react';
@@ -9,14 +8,16 @@ import { filterdata } from './data.js';
 import { genderdata } from './data.js';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../common/LanguageSelector/i18n.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const ClothesPage = () => {
 
     const [isModalShow, setModalShow] = useState(false);
     const [minValue, setMinValue] = useState(0);
     const [maxValue, setMaxValue] = useState(9999);
-    const [filter, setFilter] = useState(data);
+    const [cards, setCards] = useState([]);
+    const [filter, setFilter] = useState(cards);
     const { t } = useTranslation('translation', { i18n });
     const [showChangeLanguage, setShowChangeLanguage] = useState();
 
@@ -60,6 +61,19 @@ const ClothesPage = () => {
     const Label = Boolean(true);
     const Ruler = Boolean(false);
 
+    useEffect(() => {
+        const fetchCards = async() => {
+            try {
+                const response = await axios.get('https://657b3715394ca9e4af13fd34.mockapi.io/cards');
+                setCards(response.data);
+            } catch (error) {
+                console.error('Error fetching cards:', error);
+            }
+        };
+        
+        fetchCards();
+    }, []);
+
     return (
         <>
             <Header/>
@@ -75,7 +89,7 @@ const ClothesPage = () => {
                                 filterdata.map((check) => (
                                     <div className='filter__cloth__type'>
                                         <input type='checkbox' id={check.title} name={check.title} onChange={() => {
-                                            let filterClothArray = data.filter((item) => item.type === check.title); 
+                                            let filterClothArray = cards.filter((card) => card.type === check.title); 
                                             setFilter(filterClothArray);
                                             console.log(filterClothArray);
                                         }} />
@@ -90,8 +104,9 @@ const ClothesPage = () => {
                                 genderdata.map((check) => (
                                     <div className='filter__gender__type'>
                                         <input type='checkbox' id={check.gender} name={check.gender} onChange={() => {
-                                            let filterGenderArray = data.filter((item) => item.sex === check.gender);
+                                            let filterGenderArray = cards.filter((card) => card.sex === check.gender);
                                             setFilter(filterGenderArray);
+                                            console.log(filterGenderArray);
                                         }}/>
                                         <label className='filter__sex' for={check.gender}>{check.gender}</label>
                                     </div>
