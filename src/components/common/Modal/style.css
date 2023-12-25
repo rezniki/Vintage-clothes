@@ -253,23 +253,23 @@
     
     .modal__content {
         padding: 20px;
-        width: 70vw;
+        width: 75vw;
     }
 
     .cart__product__image {
-        width: 28%;
+        width: 25%;
     }
 
     .cart__product__description {
-        width: 24.3%;
+        width: 21.6%;
     }
 
     .checkout__content {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 10px;
     }
 
     .checkout__credit__card {
-        margin-bottom: 5px;
+        margin: 0 20px 5px 0;
     }
 
     .checkout__form__group {
