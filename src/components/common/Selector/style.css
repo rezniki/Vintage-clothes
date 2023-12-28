@@ -26,3 +26,13 @@
     line-height: 30px;
     cursor: pointer;
 }
+
+.header__profile {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 16px;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
