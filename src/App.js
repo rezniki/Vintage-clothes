@@ -9,7 +9,7 @@ const AccessoriesPage = lazy(() => import('./components/pages/AccessoriesPage'))
 const BijouteriePage = lazy(() => import('./components/pages/BijouteriePage'));
 const ShoesPage = lazy(() => import('./components/pages/ShoesPage'));
 const OtherPage = lazy(() => import('./components/pages/OtherPage'));
-const ProfilePage = lazy(() => import('./components/pages/ProfilePage'));
+const ProfilePage = lazy(() => import('./components/pages/ProfilePage/ProfilePage.jsx'));
 
 function App() {
   return (
