@@ -2,6 +2,10 @@
     cursor: pointer;
 }
 
+.card__profile__url {
+    text-decoration: none;
+}
+
 .card__profile__image {
     width: 79%;
     height: 200px;
