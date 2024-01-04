@@ -32,3 +32,11 @@
     margin-top: 20px;
 }
 
+.profile__peoples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 0 10px 10px 60px;
+}
+

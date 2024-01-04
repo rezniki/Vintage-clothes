@@ -1,7 +1,26 @@
 import './style.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Profile from '../../common/Profile/Profile.jsx';
 
 const ProfilePage = () => {
-    
+
+    const [cardsUser, setCardsUser] = useState([]);
+
+    useEffect(() => {
+        const fetchUser = async() => {
+            try {
+                const response = await axios.get('https://657b3715394ca9e4af13fd34.mockapi.io/profiles');
+
+                setCardsUser(response.data);
+            } catch (error) {
+                console.error('Error fetching cards:', error);
+            }
+        };
+        
+        fetchUser();
+    }, []);
+
     return (
         <>
             <div className='profile'>
@@ -11,7 +30,10 @@ const ProfilePage = () => {
                 </div>
 
                 <div className='profile__peoples'>
-                    
+                    <Profile cardsUser={cardsUser} />
+                    {
+                        console.log(cardsUser)
+                    }
                 </div>
             </div>
         </>

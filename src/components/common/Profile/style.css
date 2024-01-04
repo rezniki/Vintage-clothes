@@ -1,0 +1,21 @@
+.card__profile {
+    cursor: pointer;
+}
+
+.card__profile__image {
+    width: 79%;
+    height: 200px;
+    display: block;
+}
+
+.card__profile__fullname {
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-family: 'Pompiere-Regular';
+    color: rgba(255, 255, 255, 0.80);
+    padding: 15px 10px 15px 10px;
+    width: 69.2%;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
