@@ -28,7 +28,6 @@ const ProfilePage = () => {
                     <h1 className='profile__title'>Awesome team</h1>
                     <p className='profile__text'>May the force be with you</p>
                 </div>
-
                 <div className='profile__peoples'>
                     <Profile cardsUser={cardsUser} />
                     {
