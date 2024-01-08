@@ -25,8 +25,8 @@ const Selector = () => {
                 <div className='header__register__content'>
                     <Register />
                     <SignIn />
-                    <a className='header__profile' href='/profile'>Profile</a>
-                    <a className='header__profile_page' href="/profilePage">ProfilePage</a>
+                    <a className='header__profile' href='/members'>Members</a>
+                    <a className='header__profile_page' href="/profile">ProfilePage</a>
                 </div>
             )}
         </>

@@ -23,8 +23,8 @@ function App() {
             <Route path='/bijouterie' element={<BijouteriePage />} />
             <Route path='/shoes' element={<ShoesPage />} />
             <Route path='/other' element={<OtherPage />} />
-            <Route path='/profile' element={<MembersPage />} />
-            <Route path='/profilePage' element={<ProfilePage />} />
+            <Route path='/members' element={<MembersPage />} />
+            <Route path='/profile' element={<ProfilePage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
