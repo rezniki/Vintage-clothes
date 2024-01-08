@@ -26,7 +26,7 @@ const Selector = () => {
                     <Register />
                     <SignIn />
                     <a className='header__profile' href='/profile'>Profile</a>
-                    <a className='header__profile_page' href="/">ProfilePage</a>
+                    <a className='header__profile_page' href="/profilePage">ProfilePage</a>
                 </div>
             )}
         </>
