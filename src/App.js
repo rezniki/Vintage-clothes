@@ -10,6 +10,7 @@ const BijouteriePage = lazy(() => import('./components/pages/BijouteriePage'));
 const ShoesPage = lazy(() => import('./components/pages/ShoesPage'));
 const OtherPage = lazy(() => import('./components/pages/OtherPage'));
 const MembersPage = lazy(() => import('./components/pages/MembersPage/MembersPage.jsx'));
+const ProfilePage = lazy(() => import('./components/pages/ProfilePage/ProfilePage.jsx'));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/shoes' element={<ShoesPage />} />
             <Route path='/other' element={<OtherPage />} />
             <Route path='/profile' element={<MembersPage />} />
+            <Route path='/' element={<ProfilePage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
