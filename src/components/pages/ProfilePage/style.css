@@ -1,0 +1,59 @@
+.profile__page {
+    background-color: #141414;
+    padding: 50px;
+}
+
+.profile__page__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.profile__page__image {
+    width: 15%;
+    border-radius: 50px;
+}
+
+.profile__fullname__job {
+    width: 65%;
+}
+
+.profile__page__fullname {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 40px;
+    font-family: 'Viga-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.profile__page__fullname::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background:rgba(255, 255, 255, 0.80);
+    width: 45%;
+    margin: 10px 0 20px 0;
+}
+
+.profile__page__job {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 25px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.profile__page__edit {
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+    cursor: pointer;
+}
