@@ -10,6 +10,7 @@
     border: 1px solid rgba(255, 255, 255, 0.80);
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .profile__page__image {
@@ -50,10 +51,92 @@
     padding: 10px 30px 10px 30px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.80);
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Pompiere-Regular';
     font-weight: 600;
     line-height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.profile__details__info {
+    display: flex;
+}
+
+.profile__details__tasks {
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    border-radius: 20px;
+    width: 20%;
+}
+
+.profile__task__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 24px;
+    font-family: 'Viga-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
+    padding: 10px;
+}
+
+.profile__details__language {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 0 5px 10px;
+}
+
+.profile__english__update {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 5px 0 10px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+.profile__position__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 0 5px 10px;
+}
+
+.profile__details__position {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 5px 0 10px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+.profile__details__salary {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 21px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    padding: 10px 0 5px 10px;
+}
+
+.profile__task__spend {
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.80);
+    font-size: 22px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 600;
+    line-height: 30px;
+    width: 50%;
+    margin: 25px 0 20px 70px;
     border: none;
     cursor: pointer;
 }

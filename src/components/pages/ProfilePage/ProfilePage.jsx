@@ -39,6 +39,7 @@ const ProfilePage = () => {
                         <p className='profile__position__title'>position</p>
                         <p className='profile__details__position'>became S1+</p>
                         <p className='profile__details__salary'>${user.salary}</p>
+                        <button className='profile__task__spend'>Spend</button>
                     </div>
                     <div className='profile__details__infomation'>
                         <p className='profile__information__title'>Information</p>
