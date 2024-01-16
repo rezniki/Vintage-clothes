@@ -67,6 +67,7 @@
     border: 1px solid rgba(255, 255, 255, 0.80);
     border-radius: 20px;
     width: 20%;
+    margin-bottom: 25px;
 }
 
 .profile__task__title {
@@ -139,4 +140,166 @@
     margin: 25px 0 20px 70px;
     border: none;
     cursor: pointer;
+}
+
+.profile__details__infomation {
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    width: 78%;
+    height: 180px;
+}
+
+.profile__information__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 24px;
+    font-family: 'Viga-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile__information__points {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.profile__information__point {
+    text-align: center;
+    margin: 0 5px 0 5px;
+}
+
+.profile__english__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.profile__english__title::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 27px;
+    background: rgba(255, 255, 255, 0.80);
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profile__english__level {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 21px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.profile__birthday__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.profile__birthday__title::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 27px;
+    background: rgba(255, 255, 255, 0.80);
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profile__birthday__date {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 21px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.profile__group__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.profile__group__title::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 27px;
+    background: rgba(255, 255, 255, 0.80);
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profile__work__group {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.profile__room__title {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.profile__room__title::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 27px;
+    background: rgba(255, 255, 255, 0.80);
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.profile__room__number {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.profile__details__xobbies {
+    display: flex;
+}
+
+.profile__details__xobii {
+    width: 78px;
+}
+
+.profile__xobbi__text {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 23px;
+    font-family: 'Pompiere-Regular';
+    font-weight: 400;
+    line-height: 30px;
 }
