@@ -350,6 +350,7 @@
 
 .profile__details__xobbies {
     display: flex;
+    margin: 0 auto;
 }
 
 .profile__details__xobii {
@@ -362,4 +363,143 @@
     font-family: 'Pompiere-Regular';
     font-weight: 400;
     line-height: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .profile__page__image {
+        width: 18%;
+        border-radius: 30px;
+    }
+
+    .profile__fullname__job {
+        width: 55%;
+    }    
+
+    .profile__page__fullname {
+        font-size: 26px;
+    }
+
+    .profile__page__fullname::after {
+        width: 80%;
+    }
+
+    .profile__page__edit {
+        padding: 8px 15px 8px 15px;
+        font-size: 18px;
+    }
+
+    .profile__page__job {
+        font-size: 20px;
+    }
+
+    .profile__details__tasks {
+        width: 110%;
+    }
+
+    .profile__task__title {
+        font-size: 21px;
+    }
+
+    .profile__details__language {
+        font-size: 20px;
+    }
+
+    .profile__english__update {
+        font-size: 20px;
+    }
+
+    .profile__position__title {
+        font-size: 20px;
+    }
+
+    .profile__details__position {
+        font-size: 20px;
+    }
+
+    .profile__details__salary {
+        font-size: 19px;
+    }
+
+    .profile__task__spend {
+        margin: 10px 0 20px 35px;
+        padding: 5px;
+        width: 58%;
+        font-size: 18px;
+    }
+
+    .profile__details__xobbies {
+        display: block;
+        margin-left: 40px;
+        text-align: center;
+    }
+
+    .profile__xobbi__text {
+        font-size: 20px;
+    }
+
+    .profile__details__infomation {
+        width: 134.6%;
+        margin-left: 30px;
+    }
+
+    .profile__information__title {
+        font-size: 21px;
+    }
+
+    .profile__english__title {
+        font-size: 20px;
+    }
+
+    .profile__english__level {
+        font-size: 20px;
+    }
+
+    .profile__birthday__title {
+        font-size: 20px;
+    }
+
+    .profile__birthday__date {
+        font-size: 19px;
+    }
+
+    .profile__group__title {
+        font-size: 20px;
+    }
+
+    .profile__work__group {
+        font-size: 20px;
+    }
+
+    .profile__room__title {
+        font-size: 20px;
+    }
+
+    .profile__room__number {
+        font-size: 20px;
+    }
+
+    .profile__details__skills {
+        width: 128.9%;
+        margin-left: 30px;
+    }
+
+    .profile__skill__title {
+        font-size: 21px;
+    }
+
+    .profile__javascript__text {
+        font-size: 20px;
+    }
+
+    .profile__react__text {
+        font-size: 20px;
+    }
+
+    .profile__edit__profile {
+        width: 100%;
+        margin: 50px 0 0 103px;
+        padding: 5px 20px 5px 20px;
+        font-size: 18px;
+    }
 }
