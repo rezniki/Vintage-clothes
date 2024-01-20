@@ -23,3 +23,10 @@
     cursor: pointer;
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+
+    .card__profile__image {
+        width: 77.8%;
+    }
+}
