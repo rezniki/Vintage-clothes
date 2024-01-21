@@ -30,3 +30,10 @@
         width: 79%;
     }
 }
+
+@media (max-width: 320px) {
+
+    .card__profile__image {
+        width: 77.8%;
+    }
+}
