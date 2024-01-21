@@ -503,3 +503,98 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 320px) {
+
+    .profile__details__info {
+        display: block;
+    }
+
+    .profile__page__people {
+        display: block;
+        text-align: center;
+    }
+
+    .profile__page__image {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
+    .profile__page__fullname {
+        width: 180%;
+    }
+
+    .profile__page__fullname::after {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .profile__page__job {
+        width: 185%;
+        margin-bottom: 55px;
+    }
+
+    .profile__details__tasks {
+        width: 99%;
+    }
+
+    .profile__task__spend {
+        margin-left: 46px;
+    }
+
+    .profile__details__xobbies {
+        width: 38%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .profile__details__xobii {
+        margin-bottom: 30px;
+    }
+
+    .profile__details__infomation {
+        margin-left: 0;
+        width: 92%;
+        height: 300px;
+    }
+
+    .profile__information__points {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .profile__information__point {
+        margin-bottom: 40px;
+    }
+
+    .profile__room__number {
+        font-size: 19px;
+    }
+
+    .profile__details__skills {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 82.9%;
+    }
+
+    .profile__javascript__icon {
+        width: 25px;
+    }
+
+    .profile__javascript__text {
+        font-size: 18px;
+    }
+
+    .profile__react__icon {
+        width: 25px;
+    }
+
+    .profile__react__text {
+        font-size: 18px;
+    }
+
+    .profile__edit__profile {
+        margin: 0 auto;
+        width: 102%;
+    }
+}
