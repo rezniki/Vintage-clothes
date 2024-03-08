@@ -1,6 +1,6 @@
 # Millésime
 
-test single page aplication.
+test the multi-page application.
 
 ## Building and running on localhost
 
@@ -16,7 +16,7 @@ To create a development build:
 
 ### `npm start`
 
-## Site is available on git pages
+## Site
 
 https://vintage-clothes.onrender.com/
 
